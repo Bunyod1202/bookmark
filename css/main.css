@@ -219,8 +219,19 @@ background-image: url("../images/firefox.svg");
 background-image: url("../images/combined-shape.svg");
 }
 .download-list__contant {
-
+  position: relative;
   text-align: center;
+}
+.download-list__contant::after {
+content: "";
+z-index: 2;
+width: 280px;
+height: 5px;
+position: absolute;
+bottom: -30px;
+left: 0;
+background-image: url("../images/border.svg");
+background-repeat: no-repeat;
 }
 .download-list-title {
   font-weight: 500;
