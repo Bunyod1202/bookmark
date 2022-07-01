@@ -176,6 +176,8 @@ font-size: 18px;
 line-height: 28px;
 color: var(--main-dark-blue-color);
 opacity: 0.5;
+margin: 0;
+
 }
 
 .extension__list {
@@ -227,6 +229,7 @@ content: "";
 z-index: 2;
 width: 280px;
 height: 5px;
+
 position: absolute;
 bottom: -30px;
 left: 0px;
