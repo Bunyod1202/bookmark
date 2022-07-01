@@ -11,7 +11,7 @@
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/rubik-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  src: url('../fonts/rubik-v20-latin-regular.woff2') format('woff2'), 
        url('../fonts/rubik-v20-latin-regular.woff') format('woff');
 }
 @font-face {
@@ -229,9 +229,10 @@ width: 280px;
 height: 5px;
 position: absolute;
 bottom: -30px;
-left: 0;
+left: 0px;
 background-image: url("../images/border.svg");
 background-repeat: no-repeat;
+background-position: center;
 }
 .download-list-title {
   font-weight: 500;
