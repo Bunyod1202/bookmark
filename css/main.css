@@ -391,6 +391,19 @@ svg {
 
 
 }
+.features__slider--one {
+display: none;
+}
+.features__slider--one::before {
+  background-image: url("../images/loop.svg");
+}
+
+.features__slider--tuo {
+display: none;
+}
+.features__slider--tuo::before {
+  background-image: url("../images/comand.svg");
+}
 
 .slider__card {
   margin-left: auto;
@@ -534,6 +547,7 @@ details[open] .drop-item__summary .arrow-icon {
   line-height: 40px;
   letter-spacing: 5px;
   color: var(--main-white-color);
+  margin: 0;
 }
 
 .contact__title {
@@ -542,6 +556,7 @@ details[open] .drop-item__summary .arrow-icon {
   line-height: 40px;
   letter-spacing: -0.1px;
   color: var(--main-white-color);
+  margin: 24px 0 36px 0;
 }
 
 form {
@@ -554,13 +569,13 @@ form {
 }
 
 .contact__input {
-  padding: 10px 19px;
   border: none;
   background-color: var(--main-white-color);
   border-radius: 5px;
   width: 300px;
   border: 2px solid #fff;
   outline: none;
+  padding: 12px 19px;
 }
 
 .contact__input:focus {
@@ -628,7 +643,7 @@ line-height: 28px;
   font-weight: 500;
   font-size: 13px;
   line-height: 17px;
-  height: 43px;
+  height: 44px;
 }
 
 .contact__btn:hover {
@@ -647,7 +662,7 @@ line-height: 28px;
   padding: 4px 12px;
   position: absolute;
   opacity: 0;
-  bottom: -14px;
+  bottom: -18px;
   left: 0;
   width: 300px;
   color: var(--main-white-color);
@@ -668,7 +683,7 @@ line-height: 28px;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
   left: 0;
-  top: -2px;
+  top: -3px;
 }
 
 .contact__span::after {
@@ -678,7 +693,7 @@ line-height: 28px;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
   right: 0;
-  top: -2px;
+  top: -3px;
 }
 
 .contact__input:not(:-moz-placeholder-shown):not(:focus):invalid {
@@ -792,7 +807,9 @@ line-height: 28px;
 .list-link:hover svg path {
   fill: var(--main-red-color);
 }
-
+.footer-inner .list__link--margin {
+  margin-right: 0;
+}
 .loader {
   position: fixed;
   top: 0;
