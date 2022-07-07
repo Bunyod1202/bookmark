@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./css/main.min.css">
+  <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
   <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
-  <!-- <link rel="stylesheet" href="./css/main.css"> -->
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -68,16 +68,17 @@
               Your bookmarks sync between your devices so you can access them on the go.</p>
           </div>
           <ul class="features__list features-list">
-            <li class="features-list__item">
-              <button class="features-list__btn features-list__btn--active " type="button">Simple Bookmarking</button>
+            <li class="features-list__item features-list__item--active">
+              <a class="features-list__btn " href="#sliders-one">Simple Bookmarking</a>
             </li>
             <li class="features-list__item">
-              <button class="features-list__btn" type="button">Speedy Searching</button>
+              <a class="features-list__btn" href="#sliders-tuo">Speedy Searching</a>
             </li>
             <li class="features-list__item">
-              <button class="features-list__btn" type="button">Easy Sharing</button>
+              <a class="features-list__btn" href="#sliders-three">Easy Sharing</a>
             </li>
           </ul>
+         <div class="sliders sliders-active sliders-one" id="sliders-one">
           <div class="features__slider slider">
             <div class="slider__card">
               <h3 class="slider__title">Bookmark in one click</h3>
@@ -86,6 +87,8 @@
               <button class="slider__btn">More Info</button>
             </div>
           </div>
+         </div>
+          <div class="sliders sliders-tuo" id="sliders-tuo">
           <div class="features__slider features__slider--one slider">
             <div class="slider__card">
               <h3 class="slider__title">Intelligent search</h3>
@@ -93,6 +96,8 @@
               <button class="slider__btn">More Info</button>
             </div>
           </div>
+        </div>
+        <div class="sliders sliders-three" id="sliders-three">
            <div class="features__slider features__slider--tuo slider">
             <div class="slider__card">
               <h3 class="slider__title">Share your bookmarks</h3>
@@ -100,6 +105,8 @@
               <button class="slider__btn">More Info</button>
             </div>
           </div>
+          </div>
+         </div>
         </div>
       </div>
     </section>
@@ -275,13 +282,8 @@ we’re doing
           fill="#fff" /></svg>
     </div>
   </div>
-  <script>
-        var btn = document.querySelector(".loader");
-
-
-    setTimeout(() => {
-      btn.classList.add("loader-show");
-    },3000)
+  <script src="./js/main.js">
+      
   </script>
 </body>
 
